@@ -13,5 +13,5 @@ setup(
     'Programming Language :: Python :: 2.6',
     'Programming Language :: Python :: 2.7',    
   ],
-  packages=find_packages()
+  packages=find_packages(exclude=["*.test", "*.test.*", "test.*", "test"])
 )
