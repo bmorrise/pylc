@@ -10,6 +10,7 @@ sudo pip install git+git://github.com/bmorrise/pylc.git
 
 ###Usage
 ```python
+from pylc import LendingClubAPI
 lc = LendingClubAPI('[LENDING_CLUB_API_KEY]', '[ACCOUNT_NUMBER]')
 summary = lc.account.summary()
 ```
