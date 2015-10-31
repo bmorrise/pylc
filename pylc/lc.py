@@ -69,10 +69,16 @@ class LendingClubAPI:
     headers = { 'Authorization': self.api_key }
     if data is not None:
       data = json.dumps(data)
+      headers['Content-Type'] = 'application/json'
 
     if self.debug == True:
+      print "HEADERS:"
       for key, value in headers.iteritems():
         print "%s: %s" % (key, value)
+      print "DATA:"
+      print data
+      print "URL:"
+      print url
 
     try:
       req = urllib2.Request(url=url, headers=headers, data=data)
