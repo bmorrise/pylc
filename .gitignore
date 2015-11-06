@@ -1,2 +1,5 @@
 *.pyc
 driver.py
+PyLC.egg-info
+build
+dist

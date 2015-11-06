@@ -5,7 +5,7 @@ This project is intended for anyone who wants to interact with the Lending Club'
 
 ###Installation
 ```
-sudo pip install git+git://github.com/bmorrise/pylc.git
+sudo pip install pylc
 ```
 
 ###Usage
